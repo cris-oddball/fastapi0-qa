@@ -9,7 +9,7 @@ This repo is nothing more than instructions for the first level of a FastAPI app
   - add [locust](https://github.com/locustio/locust)
 
 # Application
-Setup the application based on the FastAPI docs. Prepare one `GET` route for `/status` and have it return `{'message': 'System is healthy'}`
+Set up the application based on the FastAPI docs. Prepare one `GET` route for `/status` and have it return `{'message': 'System is healthy'}`
 
 # Locust
 Use the [documentation](https://docs.locust.io/en/stable/quickstart.html) to prepare a `locustfile.py` that calls the `/status` endpoint.
@@ -45,6 +45,13 @@ Set locust to:
 - Under advanced settings type `30s`.
 
 Record results, specifically: # of Requests, Fails, 95 percentile, Average, Max, and Current RPS.
+
+Initial Draft 07/12/24
+
+| # of Requests | Fails | P95  | Average | Max   | Current RPS |
+|---------------|-------|------|---------|-------|-------------|
+| 201734        | 0     | 9 ms | 6.98 ms | 83 ms | 7682.3      |
+
 
 ## Experiment
 Try any other combinations you think may be interesting.
