@@ -31,6 +31,12 @@ Set locust to:
 
 Record results, specifically: # of Requests, Fails, 95 percentile, Average, Max, and Current RPS.
 
+### Initial Code 07/12/24
+
+| # of Requests | Fails | P95  | Average | Max   | Current RPS |
+|---------------|-------|------|---------|-------|-------------|
+| 201734        | 0     | 9 ms | 6.98 ms | 83 ms | 7682.3      |
+
 ## Multiple Workers
 NOTE: If you select "New" from the interface it will put the two runs next to each other (great for later tests).
 
@@ -46,12 +52,11 @@ Set locust to:
 
 Record results, specifically: # of Requests, Fails, 95 percentile, Average, Max, and Current RPS.
 
-Initial Draft 07/12/24
+### Initial Code 
 
 | # of Requests | Fails | P95  | Average | Max   | Current RPS |
 |---------------|-------|------|---------|-------|-------------|
-| 201734        | 0     | 9 ms | 6.98 ms | 83 ms | 7682.3      |
-
+|         |     |  |  | |     |
 
 ## Experiment
 Try any other combinations you think may be interesting.
