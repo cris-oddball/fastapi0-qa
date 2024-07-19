@@ -35,12 +35,12 @@ Record results, specifically: # of Requests, Fails, 95 percentile, Average, Max,
 
 | # of Requests | Fails | P95  | Average | Max   | Current RPS |
 |---------------|-------|------|---------|-------|-------------|
-| 201734        | 0     | 9 ms | 6.98 ms | 83 ms | 7682.3      |
+| 211479        | 0     | 9 ms | 6.82 ms | 38 ms | 7982.1      |
 
 ## Multiple Workers
 NOTE: If you select "New" from the interface it will put the two runs next to each other (great for later tests).
 
-Run `gunicorn app:<python file, no extension> -b 127.0.0.1:8000 --pythonpath app -k uvicorn.workers.UvicornWorker -w 4`
+Run `gunicorn main:app -b 127.0.0.1:8000 --pythonpath app -k uvicorn.workers.UvicornWorker -w 4`
 
 Run `locust --processes 4` in another terminal and open the web interface at http://0.0.0.0:8089.
 
@@ -56,7 +56,7 @@ Record results, specifically: # of Requests, Fails, 95 percentile, Average, Max,
 
 | # of Requests | Fails | P95  | Average | Max   | Current RPS |
 |---------------|-------|------|---------|-------|-------------|
-|         |     |  |  | |     |
+|    383125     |   0   |  12  | 3.37 ms | 128ms |  15300.1    |
 
 ## Experiment
 Try any other combinations you think may be interesting.
